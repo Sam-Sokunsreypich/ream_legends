@@ -15,7 +15,7 @@ export default function Story() {
     <div>
       
     <img 
-    src="./src/assets/story_1.png" 
+    src="./assets/story_1.png" 
      data-aos="fade-right" 
      data-aos-duration="1500" 
      className="mt-10 p-5 mx-auto" 
@@ -24,7 +24,8 @@ export default function Story() {
 </div>
     <div className="mt-9 md:mt-10 mx-10 mb-10 ">
     <img 
-     src="./src/assets/story.jpg" 
+     src="./assets/story.jpg" data-aos="fade-up" 
+     data-aos-duration="1500"
     className="block mx-auto ring-4 ring-yellow-400 ring-offset-1 ring-offset-transparent md:px-24"
      alt="story"  />
   </div>

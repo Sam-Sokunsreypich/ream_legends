@@ -1,6 +1,15 @@
 import React from 'react'
+import AOS from 'aos';  // Correct: with uppercase 'AOS'
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Charater() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // You can customize this
+      once: false, // Optional: whether animation should happen only once
+    });
+  }, []);
   const characters = [
     {
       id: 1,
@@ -37,7 +46,8 @@ export default function Charater() {
               backgroundPosition: 'center',
              }}>
   <img
-    src={character.img}
+    src={character.img} data-aos="fade-up" 
+     data-aos-duration="1500"
     alt={character.name}
     className="object-cover rounded-md"
     style={{
@@ -49,8 +59,9 @@ export default function Charater() {
 
 
          <div>
-         <h3 className="text-lg font-bold text-gray-100">{character.name}</h3>
-         <p className="text-sm  text-gray-100">{character.info}</p>
+         <h3 className="text-lg font-bold text-gray-100" data-aos="fade-right"  data-aos-duration="1500">{character.name}</h3>
+         <p className="text-sm  text-gray-100" data-aos="fade-right" 
+     data-aos-duration="1500">{character.info}</p>
          <img src="./assets/line.png" alt="line" />
          </div>
         </div>
