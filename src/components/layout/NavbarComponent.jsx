@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+// import nav_bg from './src/assets/nav_bg.jpg'
+// import Logo_name from './src/assets/Logo_name.png'
 
 export default function NavbarComponent() {
   // State to manage the dropdown menu visibility
@@ -11,11 +13,11 @@ export default function NavbarComponent() {
   };
 
   return (
-    <nav className=" border-gray-200"  style={{ backgroundImage: `url('./src/assets/nav_bg.jpg')` }}>
+    <nav className=" border-gray-200"  style={{ backgroundImage: `url('./assets/nav_bg.jpg')` }}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         {/* Logo/Home Link */} 
         <Link to="/" className="flex items-center flex-col space-x-3 rtl:space-x-reverse">
-          <img src="./src/assets/Logo_name.png" className="h-10 md:h-16 md:pl-4" alt="Flowbite Logo" />
+          <img src="./assets/Logo_name.png" className="h-10 md:h-16 md:pl-4" alt="Logo" />
           <small className="text-gray-50">-Game x Education-</small>
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ream Legends</span> */}
         </Link>
