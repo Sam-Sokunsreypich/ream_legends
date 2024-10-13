@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Dafont: ['Dafont', 'serif'], // Custom font with fallback
+      },
+    },
   },
   plugins: [],
 }
