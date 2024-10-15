@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Dafont: ['Dafont', 'serif'], // Custom font with fallback
+        dragon: ['Dragon Hunter', 'sans-serif'], // Adding the Dragon Hunter font
       },
     },
   },

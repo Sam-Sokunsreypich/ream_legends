@@ -14,14 +14,18 @@ export default function Charater() {
     {
       id: 1,
       name: "Rama",
+      info_1:"Ream is the noble prince of Ayodhya and a legendary hero from the Cambodian epic, the Reamker. Renowned for his valor and righteousness, he wields a magical bow and embarks on a quest to rescue his beloved wife, Sita, from the demon king Ravana. His journey highlights the eternal struggle between good and evil, symbolizing hope and virtue in Khmer culture.",
       info: "Rama is a central figure in Hindu mythology, revered as the seventh avatar of the god Vishnu. He embodies the ideal of dharma (righteousness) and is often depicted as a heroic prince who undertakes a perilous journey to rescue his wife, Sita, from the demon king Ravana. His story is primarily told in the ancient epic, the Ramayana, where his virtues, bravery, and commitment to justice are highlighted. Rama is also celebrated for his compassion, integrity, and devotion to family, making him a symbol of virtue and morality in Indian culture.",
       img: "./assets/Rama.jpg",
+      img_line:"./assets/line.png"
     },
     {
       id: 2,
       name: "Ravana",
+      info_1:"Rama is a central figure in Hindu mythology, revered as the seventh avatar of the god",
       info: "Ravana is a prominent antagonist in Hindu mythology, particularly in the epic Ramayana. He is depicted as the ten-headed demon king of Lanka, known for his immense power, intelligence, and mastery of the arts and sciences. Despite his formidable strengths, including his prowess in battle and devotion to Shiva, Ravana's arrogance and desire for power lead him to abduct Sita, Rama's wife, igniting a fierce conflict. His complex character embodies both villainy and tragic flaws, making him a symbol of unchecked ambition and desire, as well as a deeply nuanced figure in the narrative.",
       img: "./assets/Ravana.jpg",
+      img_line:"./assets/line.png"
     },
     // {
     //   id: 3,
@@ -32,39 +36,39 @@ export default function Charater() {
   ];
   return (
     <>
-     <div className="ring-yellow-400 ring-offset-1 ring-offset-transparent mt-9 md:mt-12 mx-auto">
+     <div className="ring-yellow-400 ring-offset-1 ring-offset-transparent mt-9 md:mt-12 mx-auto md:mx-20">
      {characters.map((character) => (
         <div
           key={character.id}
-          className=" grid md:grid-cols-2 gap-4 p-4 rounded-lg shadow-md text-center mx-10 md:auto"
-        >
+          className=" grid grid-cols-2 gap-3 p-4 rounded shadow-md text-center mx-1 md:mx-10 md:auto">
           <div
-            className="relative w-auto h-full rounded-md mb-4 flex items-center justify-center p-2" // Flexbox to center image
+            className="relative w-full h-full md:h-full rounded-md mb-4 flex items-center justify-center " // Flexbox to center image
              style={{
               backgroundImage: `url('./assets/frame.jpg')`, // Frame as background
              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-             }}>
-  <img
-    src={character.img} data-aos="fade-up" 
-     data-aos-duration="1500"
-    alt={character.name}
-    className="object-cover rounded-md"
+              backgroundPosition: 'center',}}>
+  <img src={character.img} data-aos="fade-up" data-aos-duration="1500" alt={character.name} className="object-cover rounded-md"
     style={{
-      width: '95%', // Make the image smaller than the parent div
-      height: '95%',
+      width: '92%', // Make the image smaller than the parent div
+      height: '92%',
     }}
   />
-</div>
-
-
+    </div>
          <div>
-         <h3 className="text-lg font-bold text-gray-100" data-aos="fade-right"  data-aos-duration="1500">{character.name}</h3>
-         <p className="text-sm  text-gray-100" data-aos="fade-right" 
+         <h3 className="text-2xl font-dragon text-gray-100" data-aos="fade-right"  data-aos-duration="1500">{character.name}</h3>
+         <p className="text-sm text-right text-gray-300" data-aos="fade-right" 
+     data-aos-duration="1500">{character.info_1}</p>
+         {/* <img src="./assets/line.png" alt="line" /> */}
+         </div>
+         <div className=" col-span-2 ">
+         <p className="text-sm text-right text-gray-300" data-aos="fade-right" 
      data-aos-duration="1500">{character.info}</p>
-         <img src="./assets/line.png" alt="line" />
+         </div>
+         <div className=" col-span-2 ">
+          <img src={character.img_line} className="mx-auto" alt="line"  />
          </div>
         </div>
+        
       ))}  
       
     </div> 

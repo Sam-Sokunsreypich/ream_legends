@@ -13,7 +13,10 @@ export default function Story() {
   return (
     <>
     <div>
-      
+
+
+    {/* <h1 className="font-dragon text-gradient text-6xl font-bold tracking-wider rounded-full flex justify-center items-center gap-4 hover:text-yellow-300 hover:scale-105 transition duration-300">
+      story line </h1> */}
     <img 
     src="./assets/story_1.png" 
      data-aos="fade-right" 
