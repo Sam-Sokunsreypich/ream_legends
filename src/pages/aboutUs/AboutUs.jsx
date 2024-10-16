@@ -1,13 +1,46 @@
 import React from 'react'
 
 export default function AboutUs() {
+  const teamwork=[
+    {
+      id: 1,
+      name:"Dom Hiroshi",
+      img:"./assets/Rama.jpg",
+      part: "(System)",
+    },
+    {
+      id: 2,
+      name:"Veth Somnang",
+      img:"./assets/nang.jpg",
+      part: "(Designer)",
+    },
+    {
+      id: 3,
+      name:"Dao sit soum",
+      img:"./assets/Ravana.jpg",
+      part: "(System)",
+    },
+    {
+      id: 4,
+      name:"Zean",
+      img:"./assets/Rama.jpg",
+      part: "(Designer)",
+    },
+    {
+      id: 5,
+      name:"Sam Sokunsreypich",
+      img:"./assets/pich_1.jpg",
+      part: "(Web Design)",
+    },
+    
+  ]
   return (
     <div>
-    <section className="bg-gray-900 text-white py-20">
-      {/* Header */}
+    <section className=" text-white py-20">
+   
       <div className="max-w-screen-xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-6">About Us</h1>
-        <p className="text-center text-lg max-w-2xl mx-auto mb-12">
+        <p className="text-center font-englishFont text-lg max-w-2xl mx-auto mb-12">
           Welcome to <span className="text-indigo-500 font-bold">Ream Legends</span>, 
           where we believe in the power of teamwork and creativity to build unforgettable game experiences.
         </p>
@@ -30,30 +63,31 @@ export default function AboutUs() {
       </div>
 
       {/* Teamwork Section */}
-      <div className="bg-indigo-500 text-gray-100 py-10">
-        <div className="max-w-screen-xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-6">Teamwork Makes the Dream Work</h2>
-          <p className="text-center text-lg mb-12 max-w-2xl mx-auto">
-            Our team thrives on collaboration. Every game we build is a collective effort, bringing together talented individuals from different disciplines—design, programming, writing, and art—to achieve a common vision.
-          </p>
-          <div className="flex flex-wrap justify-around items-center">
-            <div className="w-full md:w-1/3 text-center mb-8 md:mb-0">
-              <img src="/assets/teamwork.jpg" alt="Teamwork" className="rounded-full w-40 mx-auto mb-4"/>
-              <h3 className="text-xl font-semibold">Collaboration</h3>
-              <p>We embrace ideas from every corner of the team to create a unique gaming experience.</p>
-            </div>
-            <div className="w-full md:w-1/3 text-center mb-8 md:mb-0">
-              <img src="/assets/creativity.jpg" alt="Creativity" className="rounded-full w-40 mx-auto mb-4"/>
-              <h3 className="text-xl font-semibold">Creativity</h3>
-              <p>Our passion for design and storytelling drives us to create memorable worlds and characters.</p>
-            </div>
-            <div className="w-full md:w-1/3 text-center">
-              <img src="/assets/innovation.jpg" alt="Innovation" className="rounded-full w-40 mx-auto mb-4"/>
-              <h3 className="text-xl font-semibold">Innovation</h3>
-              <p>We are always looking for new ways to enhance the player experience with cutting-edge technology.</p>
-            </div>
+      <div className="bg-blue-500 mx-7 md:mx-12 my-7 md:my-12 p-5 rounded-2xl">
+        {/* for advisor */}
+        <h2 className="font-dragon text-2xl text-center p-5 text-gray-100 md:text-5xl ">Our advisor</h2>
+        <div className=" flex flex-col font-englishFont justify-center rounded-2xl items-center p-2">
+          <div className="flex justify-center items-center flex-col p-5">
+          <img className=" w-full rounded-full shadow-lg overflow-hidden h-48 object-cover" src="./assets/advisor.jpg" alt="advisor" />
+          <h4 >Khim Chamroeun</h4>
           </div>
         </div>
+        {/* for teamwork */}
+        <div >
+          <h2 className=" text-2xl text-center font-dragon p-5 text-gray-100 md:text-5xl ">Our teammate</h2>
+          <div className="grid font-englishFont grid-cols-1 rounded-2xl md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+            {teamwork.map((teamwork)=>(
+              <div  key ={teamwork.id}>
+              <div className="flex justify-center items-center flex-col p-5">
+              <img className=" rounded-full shadow-lg overflow-hidden w-48 h-48 object-cover" src={teamwork.img} alt={teamwork.name} />
+               <h3 className="text-gray-200">{teamwork.name}</h3>
+               <p className="text-gray-300">{teamwork.part}</p>
+              </div>
+              </div>
+            ) )}
+          </div>
+        </div>
+
       </div>
 
       {/* Creative Design Section */}

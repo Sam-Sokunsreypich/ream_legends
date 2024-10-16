@@ -13,17 +13,33 @@ export default function Charater() {
   const characters = [
     {
       id: 1,
-      name: "Rama",
-      info_1:"Ream is the noble prince of Ayodhya and a legendary hero from the Cambodian epic, the Reamker. Renowned for his valor and righteousness, he wields a magical bow and embarks on a quest to rescue his beloved wife, Sita, from the demon king Ravana. His journey highlights the eternal struggle between good and evil, symbolizing hope and virtue in Khmer culture.",
-      info: "Rama is a central figure in Hindu mythology, revered as the seventh avatar of the god Vishnu. He embodies the ideal of dharma (righteousness) and is often depicted as a heroic prince who undertakes a perilous journey to rescue his wife, Sita, from the demon king Ravana. His story is primarily told in the ancient epic, the Ramayana, where his virtues, bravery, and commitment to justice are highlighted. Rama is also celebrated for his compassion, integrity, and devotion to family, making him a symbol of virtue and morality in Indian culture.",
+      name: "Krong Reap",
+      info_1:"Krong Reap, or Tusamuk, is the King of the yeak(or demons) who rules over the city of Langka on the island of Langka.",
+      info: "Krong Reap is depicted as a yeak with green skin. Although he is described as having twenty arms. Krong Reap is generally painted as having four, six, eight or ten arms, all holding weapins used in battle such as the bow, spear, club, or trident. Krong Reap is said to have ten heads but he is usually painted with either a single large yeak face or with four faces(as shown here). Additional faces, both yeak and human, ae found on his headdress. Krong Reap here in a pose of guarding, confronting or setting out on a journey.",
       img: "./assets/Rama.jpg",
       img_line:"./assets/line.png"
     },
     {
       id: 2,
-      name: "Ravana",
-      info_1:"Rama is a central figure in Hindu mythology, revered as the seventh avatar of the god",
-      info: "Ravana is a prominent antagonist in Hindu mythology, particularly in the epic Ramayana. He is depicted as the ten-headed demon king of Lanka, known for his immense power, intelligence, and mastery of the arts and sciences. Despite his formidable strengths, including his prowess in battle and devotion to Shiva, Ravana's arrogance and desire for power lead him to abduct Sita, Rama's wife, igniting a fierce conflict. His complex character embodies both villainy and tragic flaws, making him a symbol of unchecked ambition and desire, as well as a deeply nuanced figure in the narrative.",
+      name: "Preah Ream",
+      info_1:"Preah Ream is the son of King Tusarot and his first Queen Kokolyan (Kaousurya). ",
+      info: "The theft of Preah Ream is wife, Neang Seda, by the King of the yeak, Krong Reap, precipitates much of the action described in the Reamker, Preah Ream is depicted as a human being with green skin, wearing a “mokot neay roong” headdress. Preah Ream is considered to be an incarnation of Preah Neareay(Vishnu). Preah Ream is shown here in a pose of just having shot an arrow from his famous bow.",
+      img: "./assets/Ravana.jpg",
+      img_line:"./assets/line.png"
+    },
+    {
+      id: 3,
+      name: "Hanuman",
+      info_1:"Hanuman is the nephew of Sugrib who becomes the strongest and cleverest monkey commander of Preah Ream. ",
+      info: "Hanuman helps Preah Ream over and over again in the fight to reclaim Neang Seda. Hanuman is depicted as a white monkey with blue or grey lines representing his fur, from afar hanuman should look white, while up close one can see his fur markings Hanuman wears a “Kbang” headdress and is depicted here in a pose of walking, holding his sword.",
+      img: "./assets/Ravana.jpg",
+      img_line:"./assets/line.png"
+    },
+    {
+      id: 4,
+      name: "Preah Leak",
+      info_1:"Preah Leak is the younger half brother of Preah Ream who fights at his side throughout the battles for Neang Seda. ",
+      info: " His mother is Samotreadevi, the third Queen of the King Tusarot. Preak Leak is depicted with flesh colored skin, wearing a headdress called a “mokot neay roong”and holding a bow. He is shown here in a pose of traveling on a journey.",
       img: "./assets/Ravana.jpg",
       img_line:"./assets/line.png"
     },
@@ -40,9 +56,9 @@ export default function Charater() {
      {characters.map((character) => (
         <div
           key={character.id}
-          className=" grid grid-cols-2 gap-3 p-4 rounded shadow-md text-center mx-1 md:mx-10 md:auto">
+          className=" grid grid-cols-2 gap-3 xl:gap-10 p-4 rounded shadow-md text-center mx-1 md:mx-10 xl:mx-16 md:auto">
           <div
-            className="relative w-full h-full md:h-full rounded-md mb-4 flex items-center justify-center " // Flexbox to center image
+            className="relative w-full h-full rounded-md mb-4 flex items-center justify-center " // Flexbox to center image
              style={{
               backgroundImage: `url('./assets/frame.jpg')`, // Frame as background
              backgroundSize: 'cover',
@@ -54,14 +70,14 @@ export default function Charater() {
     }}
   />
     </div>
-         <div>
-         <h3 className="text-2xl font-dragon text-gray-100" data-aos="fade-right"  data-aos-duration="1500">{character.name}</h3>
-         <p className="text-sm text-right text-gray-300" data-aos="fade-right" 
+         <div className="font-englishFont">
+         <h3 className="text-4xl md:text-5xl font-dragon text-gray-100" data-aos="fade-right"  data-aos-duration="1500">{character.name}</h3>
+         <p className="text-sm md:text-md lg:text-lg xl:text-xl text-right text-gray-300" data-aos="fade-right" 
      data-aos-duration="1500">{character.info_1}</p>
          {/* <img src="./assets/line.png" alt="line" /> */}
          </div>
          <div className=" col-span-2 ">
-         <p className="text-sm text-right text-gray-300" data-aos="fade-right" 
+         <p className="text-sm md:text-md lg:text-lg xl:text-xl text-right text-gray-300" data-aos="fade-right" 
      data-aos-duration="1500">{character.info}</p>
          </div>
          <div className=" col-span-2 ">

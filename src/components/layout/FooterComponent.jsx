@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function FooterComponent() {
   return (
     
-  <footer className=" text-white pt-5 pb-3" style={{ backgroundImage: `url('./assets/nav_bg.jpg')` }}>
+  <footer className=" text-white font-englishFont pt-5 pb-3" style={{ backgroundImage: `url('./assets/nav_bg.jpg')` }}>
   <div className="container mx-auto px-4">
     <div className="flex flex-col md:flex-row justify-between items-center">
         <Link to="/" className="flex items-center flex-col space-x-3 rtl:space-x-reverse">
