@@ -13,7 +13,7 @@ export default function NavbarComponent() {
   };
 
   return (
-    <nav className=" border-gray-200 font-englishFont"  style={{ backgroundImage: `url('./assets/nav_bg.jpg')` }}>
+    <nav className=" border-gray-200 font-englishFont "  style={{ backgroundImage: `url('./assets/nav_bg.jpg')` }}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         {/* Logo/Home Link */} 
         <Link to="/" className="flex items-center flex-col space-x-3 rtl:space-x-reverse">
@@ -64,7 +64,7 @@ export default function NavbarComponent() {
                 className={({ isActive }) =>
                   isActive
                     ? "block py-2 px-3 md:p-0 md:text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                    : "block py-2 px-3 md:p-0 md:text-xl text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    : "block py-2 px-3 md:p-0 md:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 }
               >
                 Story
@@ -77,7 +77,7 @@ export default function NavbarComponent() {
                 className={({ isActive }) =>
                   isActive
                     ? "block py-2 px-3 md:p-0 md:text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                    : "block py-2 px-3 md:p-0 md:text-xl text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    : "block py-2 px-3 md:p-0 md:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 }
               >
                 Character
@@ -89,7 +89,7 @@ export default function NavbarComponent() {
                 className={({ isActive }) =>
                   isActive
                     ? "block py-2 px-3 md:p-0 md:text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                    : "block py-2 px-3 md:p-0 md:text-xl text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    : "block py-2 px-3 md:p-0 md:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 }
               >
                 User Interface
@@ -101,7 +101,7 @@ export default function NavbarComponent() {
                 className={({ isActive }) =>
                   isActive
                     ? "block py-2 px-3 md:p-0 md:text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                    : "block py-2 px-3 md:p-0 md:text-xl text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    : "block py-2 px-3 md:p-0 md:text-xl  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 }
               >
                 AboutUs
