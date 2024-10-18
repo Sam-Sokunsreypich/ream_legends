@@ -13,7 +13,7 @@ export default function UserInterface() {
   }, []);
   return (
     <>
-      <div>
+      {/* <div>
       <img 
     src="./assets/ui_header.png" 
      data-aos="fade-right" 
@@ -21,12 +21,27 @@ export default function UserInterface() {
      className="mt-10 p-5 mx-auto" 
      alt="ui_header" 
     /> 
-      </div>
+      </div> */}
+      <h2 className="font-dragon text-yellow-500 text-3xl mt-8  text-center">User Interface</h2>
       <div className="mt-9 md:mt-10 mx-10 mb-10 ">
     <img 
-     src="./assets/ui_body.png" data-aos="fade-up" 
+     src="./assets/ui_4.jpg" data-aos="fade-up" 
      data-aos-duration="1500"
-    className="block mx-auto pb-5 ring-4 ring-yellow-400 ring-offset-1 ring-offset-transparent md:px-24"
+    className="block mx-auto ring-4 ring-yellow-400 rounded-md ring-offset-1 ring-offset-transparent md:px-24"
+     alt="body"  />
+  </div>
+      <div className="mt-9 md:mt-10 mx-10 mb-10 ">
+    <img 
+     src="./assets/ui_2.png" data-aos="fade-up" 
+     data-aos-duration="1500"
+    className="block mx-auto pb-5 ring-4 ring-yellow-400 rounded-md ring-offset-1 ring-offset-transparent md:px-24"
+     alt="body"  />
+  </div>
+  <div className="mt-9 md:mt-10 mx-10 mb-10 ">
+    <img 
+     src="./assets/ui-3.png" data-aos="fade-up" 
+     data-aos-duration="1500"
+    className="block mx-auto pb-5 ring-4 ring-yellow-400 rounded-md ring-offset-1 ring-offset-transparent md:px-24"
      alt="body"  />
   </div>
     </>

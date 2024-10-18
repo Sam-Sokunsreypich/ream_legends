@@ -11,8 +11,8 @@ export default function App() {
     });
   }, []);
   return (
-    <div className="flex justify-center items-center">
-      <img className=" w-auto h-screen" src="./assets/test.jpg" alt="Description of the image" />
+    <div className="my-9  md:mx-20">
+      <img className=" " src="./assets/homepage.jpg" alt="Description of the image" />
     </div>
   )
 }

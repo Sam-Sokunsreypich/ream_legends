@@ -16,7 +16,7 @@ export default function Charater() {
       name: "Krong Reap",
       info_1:"Krong Reap, or Tusamuk, is the King of the yeak(or demons) who rules over the city of Langka on the island of Langka.",
       info: "Krong Reap is depicted as a yeak with green skin. Although he is described as having twenty arms. Krong Reap is generally painted as having four, six, eight or ten arms, all holding weapins used in battle such as the bow, spear, club, or trident. Krong Reap is said to have ten heads but he is usually painted with either a single large yeak face or with four faces(as shown here). Additional faces, both yeak and human, ae found on his headdress. Krong Reap here in a pose of guarding, confronting or setting out on a journey.",
-      img: "./assets/Rama.jpg",
+      img: "./assets/krong_reap.jpg",
       img_line:"./assets/line.png"
     },
     {
@@ -24,7 +24,7 @@ export default function Charater() {
       name: "Preah Ream",
       info_1:"Preah Ream is the son of King Tusarot and his first Queen Kokolyan (Kaousurya). ",
       info: "The theft of Preah Ream is wife, Neang Seda, by the King of the yeak, Krong Reap, precipitates much of the action described in the Reamker, Preah Ream is depicted as a human being with green skin, wearing a “mokot neay roong” headdress. Preah Ream is considered to be an incarnation of Preah Neareay(Vishnu). Preah Ream is shown here in a pose of just having shot an arrow from his famous bow.",
-      img: "./assets/Ravana.jpg",
+      img: "./assets/Preah_ream.jpg",
       img_line:"./assets/line.png"
     },
     {
@@ -32,7 +32,7 @@ export default function Charater() {
       name: "Hanuman",
       info_1:"Hanuman is the nephew of Sugrib who becomes the strongest and cleverest monkey commander of Preah Ream. ",
       info: "Hanuman helps Preah Ream over and over again in the fight to reclaim Neang Seda. Hanuman is depicted as a white monkey with blue or grey lines representing his fur, from afar hanuman should look white, while up close one can see his fur markings Hanuman wears a “Kbang” headdress and is depicted here in a pose of walking, holding his sword.",
-      img: "./assets/Ravana.jpg",
+      img: "./assets/Hanuman.jpg",
       img_line:"./assets/line.png"
     },
     {
@@ -40,7 +40,15 @@ export default function Charater() {
       name: "Preah Leak",
       info_1:"Preah Leak is the younger half brother of Preah Ream who fights at his side throughout the battles for Neang Seda. ",
       info: " His mother is Samotreadevi, the third Queen of the King Tusarot. Preak Leak is depicted with flesh colored skin, wearing a headdress called a “mokot neay roong”and holding a bow. He is shown here in a pose of traveling on a journey.",
-      img: "./assets/Ravana.jpg",
+      img: "./assets/Preah_leak.jpg",
+      img_line:"./assets/line.png"
+    },
+    {
+      id: 5,
+      name: "Neang Seda",
+      info_1:"Neang Seda is the daudter of Krong Reap and Neang Montolkiri who is abandom on Krong Reap's orders shortly after she is born.",
+      info: "King Januk of the city of Mithila finds the baby girl floating in a trunk in the river. After burying the baby for more then a decade, find that she has became a veriy beautiful woman whom the king adopts. After Preah ream Shows that he can lift the bow of king Januk, he is given Neang Seda in marriage. Neang Seda is depiced as a fair skinned women women wearing the clothing headdress, and jewelry typical of all female human characters in the Reamker. ",
+      img: "./assets/seda.jpg",
       img_line:"./assets/line.png"
     },
     // {
@@ -63,7 +71,7 @@ export default function Charater() {
               backgroundImage: `url('./assets/frame.jpg')`, // Frame as background
              backgroundSize: 'cover',
               backgroundPosition: 'center',}}>
-  <img src={character.img} data-aos="fade-up" data-aos-duration="1500" alt={character.name} className="object-cover rounded-md"
+  <img src={character.img} data-aos="fade-up" data-aos-duration="1500" alt={character.name} className="object-cover min-w-40 min-h-56 p-1 rounded-md"
     style={{
       width: '92%', // Make the image smaller than the parent div
       height: '92%',

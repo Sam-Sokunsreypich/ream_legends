@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         englishFont: ['Inter', 'Koh Santepheap', 'sans-serif', 'serif'], // Custom font family
         dragon: ['Dragon Hunter', 'sans-serif'], // Adding the Dragon Hunter font
+        suwannaphum: ["Suwannaphum" ,"sans-serif"],
       },
     },
   },

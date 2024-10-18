@@ -27,7 +27,7 @@ export default function AboutUs() {
       id: 4,
       name:"Rou Kimsean",
       img:"./assets/Rama.jpg",
-      part: "(Designer)",
+      part: "(Assistant Designer)",
       info:"A student from ITE T407, RUPP",
     },
     {
@@ -68,11 +68,11 @@ export default function AboutUs() {
       </div>
 
       {/* Teamwork Section */}
-      <div className="bg-blue-500 mx-4 md:mx-12 my-7 md:my-12 px-5 rounded-2xl">
+      <div className="bg-blue-500 mx-4 md:mx-12 my-7 md:my-12 p-5 rounded-2xl">
         {/* for advisor */}
-        <h2 className="font-bold text-3xl text-center p-5 text-gray-100 md:text-5xl ">Advisor</h2>
-        <div className="flex flex-row font-englishFont p-2 ">
-          <img className="rounded-full shadow-lg overflow-hidden h-40 w-40 object-cover" src="./assets/advisor.jpg" alt="advisor" />
+        <h2 className="font-bold text-3xl text-center p-6 text-gray-100 md:text-5xl ">Advisor</h2>
+        <div className="flex flex-row md:justify-center md:items-center font-englishFont p-2 ">
+          <img className="rounded-full shadow-lg overflow-hidden h-40 min-w-40 object-cover" src="./assets/advisor.jpg" alt="advisor" />
       <div className="text-right">
         <h4 className="font-bold">Khim Chamroeun</h4>
         <h2>(advisor)</h2>
@@ -81,8 +81,8 @@ export default function AboutUs() {
 
         {/* for teamwork */}
         <div >
-          <h2 className=" text-3xl text-center font-bold text-gray-100 md:text-5xl ">Our Teammate</h2>
-          <div className="grid font-englishFont grid-cols-1 rounded-2xl md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+          <h2 className=" text-3xl text-center font-bold mt-5 text-gray-100 md:text-5xl p-2">Our Teammate</h2>
+          <div className="grid font-englishFont grid-cols-1 rounded-2xl md:grid-cols-2 md:gap-8 ">
             {teamwork.map((teamwork)=>(
               <div  key ={teamwork.id}>
               <div className={`flex pt-5 ${
@@ -94,7 +94,7 @@ export default function AboutUs() {
         }`}>
            <h3 className="text-gray-200 font-bold">{teamwork.name}</h3>
            <p className="text-gray-300">{teamwork.part}</p>
-           <small>{teamwork.info}</small>
+           <small className="text-gray-200">{teamwork.info}</small>
            </div>
               </div>
               </div>
