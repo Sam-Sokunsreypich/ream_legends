@@ -111,7 +111,7 @@ export default function Story() {
       )}
    </div>
   </div>
-  <div></div>
+  <div><p className="font-suwannaphum text-center text-gray-100 text-xl p-4">ដកស្រង់ចេញពីរឿងរាមកេរ្តិ៍ ដែលរៀបរៀងដោយ​ លោកលាងហាប់អាន</p></div>
     </>
   )
 }

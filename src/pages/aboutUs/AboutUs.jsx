@@ -19,14 +19,14 @@ export default function AboutUs() {
     {
       id: 3,
       name:"Dao sit soum",
-      img:"./assets/Ravana.jpg",
+      img:"./assets/soum.jpg",
       part: "(System)",
       info:"A student from ITE T407, RUPP",
     },
     {
       id: 4,
       name:"Rou Kimsean",
-      img:"./assets/Rama.jpg",
+      img:"./assets/zean.jpg",
       part: "(Assistant Designer)",
       info:"A student from ITE T407, RUPP",
     },
@@ -43,29 +43,6 @@ export default function AboutUs() {
     <div>
     <section className=" text-white py-20">
    
-      <div className="max-w-screen-xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-6">About Us</h1>
-        <p className="text-center font-englishFont text-lg max-w-2xl mx-auto mb-12">
-          Welcome to <span className="text-indigo-500 font-bold">Ream Legends</span>, 
-          where we believe in the power of teamwork and creativity to build unforgettable game experiences.
-        </p>
-      </div>
-
-      {/* Mission Section */}
-      <div className="max-w-screen-xl mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold text-indigo-400 mb-4 text-center">Our Mission</h2>
-        <div className="flex flex-wrap justify-between items-center">
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <p className="text-lg leading-relaxed">
-              Our mission is to create immersive and captivating games that inspire players to think, collaborate, 
-              and explore. We aim to push the boundaries of storytelling and gameplay by fostering a culture of innovation and creativity.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 flex justify-center">
-            <img src="/assets/mission.jpg" alt="Mission" className="rounded-lg shadow-lg w-4/5"/>
-          </div>
-        </div>
-      </div>
 
       {/* Teamwork Section */}
       <div className="bg-blue-500 mx-4 md:mx-12 my-7 md:my-12 p-5 rounded-2xl">
@@ -105,19 +82,7 @@ export default function AboutUs() {
       </div>
 
       {/* Creative Design Section */}
-      <div className="max-w-screen-xl mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold text-indigo-400 mb-4 text-center">Creative Design</h2>
-        <div className="flex flex-wrap justify-between items-center">
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <p className="text-lg leading-relaxed">
-               <span className="text-indigo-500 font-bold">Ream Legends</span>, we take pride in our attention to detail and the craftsmanship that goes into every element of our games. From the stunning visuals to the intuitive user interface, every aspect is thoughtfully designed to immerse players in a seamless and engaging experience.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 flex justify-center">
-            <img src="/assets/creative-design.jpg" alt="Creative Design" className="rounded-lg shadow-lg w-4/5"/>
-          </div>
-        </div>
-      </div>
+      
     </section>
 
     </div>
